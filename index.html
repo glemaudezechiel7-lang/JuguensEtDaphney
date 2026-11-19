@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Joyeux Anniversaire Dapney 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;--deep:#7a0f45}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;overflow:hidden}
+body{font-family:'Poppins',system-ui,sans-serif;color:#fff;background:linear-gradient(135deg,#ff2d87,#ff7ab8,#c2185b,#ff5fa2);background-size:400% 400%;animation:bg 14s ease infinite}
+@keyframes bg{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+.orb{position:fixed;border-radius:50%;filter:blur(60px);opacity:.45;animation:float 12s ease-in-out infinite;pointer-events:none}
+.o1{width:50vmax;height:50vmax;background:#ffc2e0;top:-15vmax;left:-15vmax}
+.o2{width:40vmax;height:40vmax;background:#ff3d8f;bottom:-12vmax;right:-12vmax;animation-delay:-5s}
+@keyframes float{50%{transform:translate(6vmax,5vmax) scale(1.15)}}
+#fx{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.fl{position:absolute;bottom:-10vh;white-space:nowrap;font-family:'Great Vibes',cursive;color:#fff;text-shadow:0 0 12px #ff4fa0,0 0 24px #ff4fa0;animation:up linear forwards;opacity:0}
+.hr{position:absolute;bottom:-10vh;animation:up linear forwards;opacity:0}
+@keyframes up{0%{transform:translateY(0) rotate(-6deg);opacity:0}10%{opacity:.9}90%{opacity:.8}100%{transform:translateY(-115vh) rotate(8deg);opacity:0}}
+#crawl{position:fixed;left:0;right:0;top:0;padding:0 7vw;text-align:center;will-change:transform;z-index:2}
+#crawl p{font-size:clamp(17px,4.6vw,26px);line-height:1.7;font-weight:300;margin:0 auto 2.2rem;max-width:640px;text-shadow:0 2px 14px rgba(122,15,69,.6)}
+#crawl p b{font-weight:500;color:#fff4fa}
+#crawl h1,#crawl h2{font-family:'Great Vibes',cursive;font-weight:400;text-shadow:0 0 20px #ff3d8f,0 0 40px #ff3d8f}
+#crawl h1{font-size:clamp(46px,13vw,92px);margin-bottom:2.4rem;line-height:1.1}
+#crawl h2{font-size:clamp(38px,10vw,70px);margin:1rem 0}
+#veil{position:fixed;inset:0;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.2rem;background:radial-gradient(circle,#ff7ab8,#c2185b);text-align:center;padding:2rem;transition:opacity 1s}
+#veil h1{font-family:'Great Vibes',cursive;font-weight:400;font-size:clamp(48px,14vw,96px);text-shadow:0 0 25px #ff2d87}
+#veil .big{font-size:70px;animation:pulse 1.1s infinite}
+@keyframes pulse{50%{transform:scale(1.2)}}
+button{font:500 17px 'Poppins',sans-serif;border:0;border-radius:50px;padding:15px 34px;cursor:pointer;color:var(--deep);background:#fff;box-shadow:0 8px 30px rgba(122,15,69,.4)}
+#mute{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:14px;z-index:5;padding:10px 16px;font-size:18px;display:none}
+</style>
+</head>
+<body>
+<div class="orb o1"></div><div class="orb o2"></div>
+<div id="fx"></div>
+
+<div id="crawl">
+<h1>Joyeux Anniversaire</h1>
+<p>Ma femme, mon adorable…<br>la personne qui fait briller mon cœur.</p>
+<p>Tu es la seule qui compte plus que tout au monde pour moi.</p>
+<p>Tu es celle que je veux pour être <b>la mère de mes enfants</b>.</p>
+<p>Je veux que tu saches à quel point je t’aime,<br>à quel point tu comptes pour moi.</p>
+<p>Je suis tellement impatient de te donner mon nom,<br>de t’appeler <b>Mme Herard</b>.</p>
+<p>Ma future épouse…</p>
+<p>Aujourd’hui, le monde entier a de la chance : c’est le jour où tu es née.</p>
+<p>Ton sourire éclaire mes journées les plus sombres.</p>
+<p>Ta voix est ma mélodie préférée,<br>et tes bras sont mon refuge.</p>
+<p>Avec toi, chaque instant devient une promesse,<br>chaque jour devient un cadeau.</p>
+<p>Tu as fait de moi un homme meilleur,<br>plus fort, plus doux, plus vrai.</p>
+<p>Je te promets de te protéger, de te respecter<br>et de t’aimer plus fort chaque matin.</p>
+<p>Je rêve déjà de notre maison, de nos rires,<br>et des petits pas qui courront vers nous.</p>
+<p>Que cette nouvelle année t’apporte la joie, la santé,<br>la paix et tous les rêves de ton cœur.</p>
+<p>Tu mérites tout l’amour de l’univers,<br>et je ferai tout pour te le donner.</p>
+<h2>Joyeux Anniversaire,<br>mon amour 🎂</h2>
+<p>Je t’aime aujourd’hui, demain<br>et pour toute la vie. ❤️</p>
+<p style="margin-top:3rem">Ton mari,</p>
+<h2 id="sign">Juguens Herard</h2>
+<p style="height:30vh">💖</p>
+</div>
+
+<button id="mute">🔊</button>
+
+<div id="veil">
+  <div class="big">💖</div>
+  <h1>Pour toi, Dapney</h1>
+  <p>Une surprise d’anniversaire t’attend…</p>
+  <button id="go">▶ Ouvrir ma surprise</button>
+</div>
+
+<!-- 🎵 TA MUSIQUE : mets le fichier musique.mp3 dans le même dossier que cette page -->
+<audio id="aud" src="Goulam.mp3" loop preload="auto"></audio>
+
+<script>
+const fx=document.getElementById('fx'),crawl=document.getElementById('crawl'),aud=document.getElementById('aud');
+const msgs=["Je t’aime Dapney 💕","Juguens t’aime beaucoup","Mme Herard, je t’aime encore et encore","Je t’aime pour la vie","Joyeux Anniversaire ❤️","Dapney 💖 Juguens","Mon amour pour toujours","Ma future Mme Herard"];
+const hearts=["💖","💗","💕","💘","🌸","✨","🎈","🎀"];
+let mi=0,muted=false;
+
+function floatMsg(){
+  const e=document.createElement('span');e.className='fl';
+  e.textContent=msgs[mi++%msgs.length];
+  e.style.left=Math.random()*55+'vw';
+  e.style.fontSize=(22+Math.random()*16)+'px';
+  e.style.animationDuration=(9+Math.random()*5)+'s';
+  fx.appendChild(e);setTimeout(()=>e.remove(),15000);
+}
+function floatHeart(){
+  const e=document.createElement('span');e.className='hr';
+  e.textContent=hearts[Math.floor(Math.random()*hearts.length)];
+  e.style.left=Math.random()*95+'vw';
+  e.style.fontSize=(16+Math.random()*30)+'px';
+  e.style.animationDuration=(6+Math.random()*7)+'s';
+  fx.appendChild(e);setTimeout(()=>e.remove(),14000);
+}
+function burst(){
+  for(let i=0;i<70;i++){
+    const e=document.createElement('span');e.className='hr';
+    e.textContent=hearts[i%hearts.length];
+    e.style.left=Math.random()*95+'vw';
+    e.style.fontSize=(18+Math.random()*34)+'px';
+    e.style.animationDuration=(4+Math.random()*5)+'s';
+    e.style.animationDelay=Math.random()*2+'s';
+    fx.appendChild(e);setTimeout(()=>e.remove(),12000);
+  }
+}
+
+function startCrawl(){
+  const vh=innerHeight,H=crawl.scrollHeight,speed=Math.max(34,Math.min(46,innerWidth/14));
+  const endY=-(H-vh*0.95);let y=vh,last=performance.now(),done=false;
+  function frame(now){
+    const dt=(now-last)/1000;last=now;
+    if(y>endY)y-=speed*dt;else if(!done){done=true;burst();setInterval(burst,6000)}
+    crawl.style.transform=`translateY(${y}px)`;
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+
+document.getElementById('go').onclick=()=>{
+  aud.currentTime=0;
+  aud.play().catch(()=>alert("Le fichier musique.mp3 est introuvable : vérifie qu’il est dans le même dossier que la page."));
+  const v=document.getElementById('veil');v.style.opacity=0;setTimeout(()=>v.remove(),1000);
+  document.getElementById('mute').style.display='block';
+  startCrawl();floatMsg();setInterval(floatMsg,1800);setInterval(floatHeart,700);
+};
+document.getElementById('mute').onclick=function(){
+  muted=!muted;this.textContent=muted?'🔇':'🔊';aud.muted=muted;
+};
+</script>
+</body>
+</html>
